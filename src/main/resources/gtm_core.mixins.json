@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.dancingsnow.gtm_core.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "GTMCore.refmap.json",
+  "mixins": [
+    "ad_astra.VehicleMixin",
+    "gtceu.OreDataLoaderMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
