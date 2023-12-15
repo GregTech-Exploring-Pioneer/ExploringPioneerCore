@@ -1,6 +1,6 @@
 package cn.dancingsnow.gtm_core.mixin.gtceu;
 
-import cn.dancingsnow.gtm_core.GTMCoreConfig;
+import cn.dancingsnow.gtm_core.ExploringPioneerCoreConfig;
 import com.google.gson.JsonElement;
 import com.gregtechceu.gtceu.GTCEu;
 import com.gregtechceu.gtceu.api.registry.GTRegistries;
@@ -24,7 +24,7 @@ public class OreDataLoaderMixin {
             remap = false
     )
     public void gtm_core$apply(Map<ResourceLocation, JsonElement> resourceList, ResourceManager resourceManager, ProfilerFiller profiler, CallbackInfo ci) {
-        GTMCoreConfig.REMOVE_VEINS.forEach(id -> GTRegistries.ORE_VEINS.remove(GTCEu.id(id)));
+        ExploringPioneerCoreConfig.REMOVE_VEINS.forEach(id -> GTRegistries.ORE_VEINS.remove(GTCEu.id(id)));
     }
 
 }

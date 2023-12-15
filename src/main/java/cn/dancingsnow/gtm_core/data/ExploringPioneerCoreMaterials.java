@@ -7,7 +7,7 @@ import com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 
 @SuppressWarnings("unused")
-public class GTMCoreMaterials {
+public class ExploringPioneerCoreMaterials {
     public static final Material SUPERCONDUCTOR_BASE_MV = new Material.Builder("superconductor_base_mv")
             .ingot().fluid()
             .color(0x4b4b4b)

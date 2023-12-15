@@ -7,8 +7,8 @@ import net.minecraftforge.fml.event.config.ModConfigEvent;
 
 import java.util.List;
 
-@Mod.EventBusSubscriber(modid = GTMCore.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class GTMCoreConfig {
+@Mod.EventBusSubscriber(modid = ExploringPioneerCore.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+public class ExploringPioneerCoreConfig {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
     private static final ForgeConfigSpec.ConfigValue<List<String>> remove_veins = BUILDER

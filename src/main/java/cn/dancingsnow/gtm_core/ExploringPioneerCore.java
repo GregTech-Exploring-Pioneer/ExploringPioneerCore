@@ -8,18 +8,18 @@ import net.minecraftforge.fml.config.ModConfig;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(GTMCore.MODID)
-public class GTMCore {
+@Mod(ExploringPioneerCore.MODID)
+public class ExploringPioneerCore {
 
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "gtm_core";
+    public static final String MODID = "ep_core";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public GTMCore() {
+    public ExploringPioneerCore() {
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, GTMCoreConfig.SPEC);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ExploringPioneerCoreConfig.SPEC);
     }
 
     public static ResourceLocation id(String path) {

@@ -6,7 +6,7 @@ import earth.terrarium.ad_astra.common.registry.ModBlocks;
 import net.minecraft.tags.BlockTags;
 
 @SuppressWarnings("unused")
-public class GTMCoreTagprefixs {
+public class ExploringPioneerCoreTagprefixs {
     public static final TagPrefix MOON_STONE = TagPrefix.oreTagPrefix("moon_stone")
             .langValue("Moon %s Ore")
             .materialIconType(MaterialIconType.ore)

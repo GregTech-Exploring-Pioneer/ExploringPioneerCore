@@ -1,9 +1,9 @@
 package cn.dancingsnow.gtm_core;
 
-import cn.dancingsnow.gtm_core.data.GTMCoreMaterials;
-import cn.dancingsnow.gtm_core.data.GTMCoreElements;
-import cn.dancingsnow.gtm_core.data.GTMCoreRecipes;
-import cn.dancingsnow.gtm_core.data.GTMCoreTagprefixs;
+import cn.dancingsnow.gtm_core.data.ExploringPioneerCoreMaterials;
+import cn.dancingsnow.gtm_core.data.ExploringPioneerCoreElements;
+import cn.dancingsnow.gtm_core.data.ExploringPioneerCoreRecipes;
+import cn.dancingsnow.gtm_core.data.ExploringPioneerCoreTagprefixs;
 import com.gregtechceu.gtceu.api.addon.GTAddon;
 import com.gregtechceu.gtceu.api.addon.IGTAddon;
 import net.minecraft.data.recipes.FinishedRecipe;
@@ -11,7 +11,7 @@ import net.minecraft.data.recipes.FinishedRecipe;
 import java.util.function.Consumer;
 
 @GTAddon
-public class GTMCoreAddon implements IGTAddon {
+public class ExploringPioneerCoreAddon implements IGTAddon {
     @Override
     public void initializeAddon() {
 
@@ -19,30 +19,30 @@ public class GTMCoreAddon implements IGTAddon {
 
     @Override
     public String addonModId() {
-        return GTMCore.MODID;
+        return ExploringPioneerCore.MODID;
     }
 
     @Override
     public void registerTagPrefixes() {
         IGTAddon.super.registerTagPrefixes();
-        GTMCoreTagprefixs.init();
+        ExploringPioneerCoreTagprefixs.init();
     }
 
     @Override
     public void registerElements() {
         IGTAddon.super.registerElements();
-        GTMCoreElements.init();
+        ExploringPioneerCoreElements.init();
     }
 
     @Override
     public void registerMaterials() {
         IGTAddon.super.registerMaterials();
-        GTMCoreMaterials.init();
+        ExploringPioneerCoreMaterials.init();
     }
 
     @Override
     public void addRecipes(Consumer<FinishedRecipe> provider) {
         IGTAddon.super.addRecipes(provider);
-        GTMCoreRecipes.init(provider);
+        ExploringPioneerCoreRecipes.init(provider);
     }
 }
