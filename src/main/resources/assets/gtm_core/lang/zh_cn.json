@@ -3,5 +3,19 @@
     "tagprefix.mars_stone": "火星石%s矿石",
     "tagprefix.venus_stone": "金星石%s矿石",
     "tagprefix.mercury_stone": "水星石%s矿石",
-    "tagprefix.glacio_stone": "霜原石%s矿石"
+    "tagprefix.glacio_stone": "霜原石%s矿石",
+    "material.superconductor_base_mv": "MV 超导粗胚",
+    "material.superconductor_base_hv": "HV 超导粗胚",
+    "material.superconductor_base_ev": "EV 超导粗胚",
+    "material.superconductor_base_iv": "IV 超导粗胚",
+    "material.superconductor_base_luv": "LuV 超导粗胚",
+    "material.superconductor_base_zpm": "ZPM 超导粗胚",
+    "material.superconductor_base_uv": "UV 超导粗胚",
+    "material.superconductor_mv": "MV 超导",
+    "material.superconductor_hv": "HV 超导",
+    "material.superconductor_ev": "EV 超导",
+    "material.superconductor_iv": "IV 超导",
+    "material.superconductor_luv": "LuV 超导",
+    "material.superconductor_zpm": "ZPM 超导",
+    "material.superconductor_uv": "UV 超导"
 }
