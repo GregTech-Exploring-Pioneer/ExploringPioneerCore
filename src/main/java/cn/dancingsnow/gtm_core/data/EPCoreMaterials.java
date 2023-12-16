@@ -7,7 +7,7 @@ import com.gregtechceu.gtceu.api.data.chemical.material.properties.BlastProperty
 import com.gregtechceu.gtceu.common.data.GTMaterials;
 
 @SuppressWarnings("unused")
-public class ExploringPioneerCoreMaterials {
+public class EPCoreMaterials {
     public static final Material SUPERCONDUCTOR_BASE_MV = new Material.Builder("superconductor_base_mv")
             .ingot().fluid()
             .color(0x4b4b4b)
@@ -80,7 +80,7 @@ public class ExploringPioneerCoreMaterials {
 
     public static final Material SUPERCONDUCTOR_MV = new Material.Builder("superconductor_mv")
             .color(0x4b4b4b)
-            .cableProperties(GTValues.V[GTValues.MV], 4, 0 ,true)
+            .cableProperties(GTValues.V[GTValues.MV], 4, 0, true)
             .flags(MaterialFlags.NO_WORKING)
             .buildAndRegister()
             .setFormula("Cd5MgO6");
@@ -126,6 +126,7 @@ public class ExploringPioneerCoreMaterials {
             .flags(MaterialFlags.NO_WORKING)
             .buildAndRegister()
             .setFormula("*Nq*4(Ir3Os)3EuSm");
+
 
     // load the class
     public static void init() {

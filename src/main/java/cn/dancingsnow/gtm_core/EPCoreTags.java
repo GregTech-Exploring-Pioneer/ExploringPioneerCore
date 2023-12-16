@@ -5,7 +5,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.material.Fluid;
 
-public class ExploringPioneerCoreTags {
+public class EPCoreTags {
     public static class FluidTags {
         public static final TagKey<Fluid> TIER_1 = mod("tier_1");
         public static final TagKey<Fluid> TIER_2 = mod("tier_2");
@@ -13,7 +13,7 @@ public class ExploringPioneerCoreTags {
         public static final TagKey<Fluid> TIER_4 = mod("tier_4");
 
         private static TagKey<Fluid> mod(String path) {
-            return TagKey.create(Registries.FLUID, new ResourceLocation(ExploringPioneerCore.MODID, path));
+            return TagKey.create(Registries.FLUID, new ResourceLocation(EPCore.MOD_ID, path));
         }
     }
 }

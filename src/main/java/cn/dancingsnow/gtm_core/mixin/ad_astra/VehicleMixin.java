@@ -1,6 +1,6 @@
 package cn.dancingsnow.gtm_core.mixin.ad_astra;
 
-import cn.dancingsnow.gtm_core.ExploringPioneerCoreTags;
+import cn.dancingsnow.gtm_core.EPCoreTags;
 import earth.terrarium.ad_astra.common.entity.vehicle.Rocket;
 import earth.terrarium.ad_astra.common.entity.vehicle.Vehicle;
 import earth.terrarium.ad_astra.common.registry.ModTags;
@@ -47,10 +47,10 @@ public abstract class VehicleMixin {
             if ((Object) this instanceof Rocket rocket) {
                 int tier = rocket.getTier();
                 return switch (tier) {
-                    case 1 -> ExploringPioneerCoreTags.FluidTags.TIER_1;
-                    case 2 -> ExploringPioneerCoreTags.FluidTags.TIER_2;
-                    case 3 -> ExploringPioneerCoreTags.FluidTags.TIER_3;
-                    case 4 -> ExploringPioneerCoreTags.FluidTags.TIER_4;
+                    case 1 -> EPCoreTags.FluidTags.TIER_1;
+                    case 2 -> EPCoreTags.FluidTags.TIER_2;
+                    case 3 -> EPCoreTags.FluidTags.TIER_3;
+                    case 4 -> EPCoreTags.FluidTags.TIER_4;
                     default -> ModTags.FUELS;
                 };
             }
